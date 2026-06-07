@@ -1,6 +1,5 @@
-public interface ResourcesVisitor<R> {
+public interface ResourceVisitor<R> {
     R visit(Folder folder);
-    R visit(File file);
     R visit(SourceFile sourceFile);
     R visit(BinaryFile binaryFile);
 }
